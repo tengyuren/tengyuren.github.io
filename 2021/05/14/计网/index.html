@@ -22,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hello World - Hexo</title>
+  <title>Hexo</title>
   
 
   
@@ -438,73 +438,92 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <h1 class="title">
-        Hello World
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="">
-    <p>请设置文章作者</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 14, 2021</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="Hello World" data-path="/2021/05/14/hello-world/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
-      </div>
-    
   </div>
 
 
   
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <h1 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h1><h3 id="1、OSI七层模型"><a href="#1、OSI七层模型" class="headerlink" title="1、OSI七层模型"></a>1、OSI七层模型</h3><p>物理层、数据链路层 （ALOHA、PPP、HDLC、CSMA、CSMA/CA、CSMA/CD） 、网络层 （IP、ARP（IP-&gt;MAC）、RARP (MAC-&gt;IP)、ICMP、IGMP） 、传输层 （TCP、UDP） 、会话层、表示层、应用层</p>
+<h3 id="2、单工、半双工、全双工"><a href="#2、单工、半双工、全双工" class="headerlink" title="2、单工、半双工、全双工"></a>2、单工、半双工、全双工</h3><p>​    单工：又称为单向通信，即只能有一个方向的通信而没有反方向的交互。例：无线电广播，电视广播</p>
+<p>​    半双工：又称为双向交替通信，即通信的双方都可以发送信息，但不能双方同时发送（当然也就不能同时接受）</p>
+<p>​    全双工：又称为双向同时通信，即通信的双方可以同时发送和接受信息。</p>
+<p>​    单工只要一条信道，而半双工和全双工需都需要两条信道（每个方向各一条）。 </p>
+<h3 id="3、频分复用如何避免各路信号间的干扰"><a href="#3、频分复用如何避免各路信号间的干扰" class="headerlink" title="3、频分复用如何避免各路信号间的干扰"></a>3、频分复用如何避免各路信号间的干扰</h3><p>频分复用要求总频率宽度大于各个子信道频率之和，同时为了保证各子信道中所传输的信号互不干扰，应在各子信道之间设立隔离带（也就是保护频带，即插入一些 空白的频段 ），这样就保证了各路信号互不干扰。</p>
+<h3 id="4、简述一下停等协议ARQ-链路层-传输层"><a href="#4、简述一下停等协议ARQ-链路层-传输层" class="headerlink" title="4、简述一下停等协议ARQ (链路层/传输层)"></a>4、简述一下停等协议ARQ (链路层/传输层)</h3><h3 id="5、连接两个局域网需要用什么设备，在哪一层"><a href="#5、连接两个局域网需要用什么设备，在哪一层" class="headerlink" title="5、连接两个局域网需要用什么设备，在哪一层"></a>5、连接两个局域网需要用什么设备，在哪一层</h3><p>物理层：中继器、集线器</p>
+<p>数据链路层：网桥、交换机</p>
+<p>网络层：路由器</p>
+<h3 id="6、电路交换，报文交换，分组交换之间的区别以及联系"><a href="#6、电路交换，报文交换，分组交换之间的区别以及联系" class="headerlink" title="6、电路交换，报文交换，分组交换之间的区别以及联系"></a>6、电路交换，报文交换，分组交换之间的区别以及联系</h3><p> <img src="https://img-blog.csdnimg.cn/20200324172215273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTMzOTg2,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20200324172215273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTMzOTg2,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"> </p>
+<h3 id="7、什么是滑动窗口协议"><a href="#7、什么是滑动窗口协议" class="headerlink" title="7、什么是滑动窗口协议"></a>7、什么是滑动窗口协议</h3><p>滑动窗口协议，是TCP使用的一种流量控制方法。该协议允许发送方在停止并等待确认前可以连续发送 多个分组。由于发送方不必每发一个分组就停下来等待确认，因此该协议可以加速数据的传输。</p>
+<h3 id="8、拥塞控制的四种算法"><a href="#8、拥塞控制的四种算法" class="headerlink" title="8、拥塞控制的四种算法"></a>8、拥塞控制的四种算法</h3><p>慢启动、拥塞避免、快重传、快恢复</p>
+<h3 id="9、路由协议有哪些"><a href="#9、路由协议有哪些" class="headerlink" title="9、路由协议有哪些"></a>9、路由协议有哪些</h3><p><strong>内部网关协议：(一个自治系统AS内的网关协议)</strong></p>
+<p><strong>RIP 路由信息协议</strong>：仅和邻居交换信息，且交换的是整个路由表，适用于小规模网络，传输层使用UDP</p>
+<p>每30秒交换一次，BF算法</p>
+<table>
+<thead>
+<tr>
+<th align="center">目的网络</th>
+<th align="center">距离</th>
+<th align="center">下一跳</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">16（不可达）</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">经过一个路由器加1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><strong>OSPF 开放最短路由协议</strong>：向自治域中所有路由器发送信息，且发送的是链路状态表，根据代价选择最佳路由，基于IP协议，每次寻找最短路径更新路由表，每一个路由器都有一个全网的拓扑图，<strong>DJ算法</strong>，在链路状态变化时更新。</p>
+<p><strong>外部网关协议</strong>：</p>
+<p><strong>BGP 外部网关协议</strong>：不同AS的路由器之间交换路由信息的协议，应用层协议，基于TCP实现。</p>
+<h3 id="10、IPv4地址缺乏的解决办法-替代方案"><a href="#10、IPv4地址缺乏的解决办法-替代方案" class="headerlink" title="10、IPv4地址缺乏的解决办法(替代方案)"></a>10、IPv4地址缺乏的解决办法(替代方案)</h3><p><strong>NAT 网络地址转换</strong>：根据NAT转换表，NAT路由器将 专用网上的IP地址 和 因特网上的外部全球唯一IP地址 进行转化<br><strong>CIDR 无分类编址，构成超网</strong>：CIDR消除了传统的A类、B类和C类地址以及划分子网的概念，融合子网地址和子网掩码，方便子网划分，把网络前缀都相同的连续IP地址组成一个CIDR地址块</p>
+<h3 id="11、IPv4和IPv6如何相互通信？"><a href="#11、IPv4和IPv6如何相互通信？" class="headerlink" title="11、IPv4和IPv6如何相互通信？"></a>11、IPv4和IPv6如何相互通信？</h3><p>IPV4向IPV6过渡的策略：</p>
+<p>双栈协议：同时启用IPV4和IPV6协议栈</p>
+<p>隧道技术：将其他协议的数据帧或包重新封装然后通过隧道发送</p>
+<h3 id="12、路由器和交换机的区别"><a href="#12、路由器和交换机的区别" class="headerlink" title="12、路由器和交换机的区别"></a>12、路由器和交换机的区别</h3><p>路由器是网络层设备，交换机是数据链路层设备，路由器一般基于软件实现，且根据IP地址进行转发，交换机基于硬件实现，并根据MAC地址转发。</p>
+<h3 id="13、应用层有什么协议，举出两个协议的作用"><a href="#13、应用层有什么协议，举出两个协议的作用" class="headerlink" title="13、应用层有什么协议，举出两个协议的作用"></a>13、应用层有什么协议，举出两个协议的作用</h3><p><strong>DNS</strong>    将域名解析成IP地址<br><strong>DHCP</strong>    使主机动态获取IP地址<br><strong>HTTP</strong>    超文本传输协议，所有的 WWW（万维网） 文件都必须遵守这个标准。设计 HTTP 最初的目的是为了提供一种发布和接收 HTML 页面的方法。<br><strong>FTP</strong>    (文件传输协议)<br><strong>SMTP</strong>     邮件发送协议<br><strong>POP3</strong>、<strong>IMAP</strong>     邮件接收协议</p>
+<h3 id="14、网络通信过程"><a href="#14、网络通信过程" class="headerlink" title="14、网络通信过程"></a>14、网络通信过程</h3><p> <img src="https://img-blog.csdnimg.cn/20200324175703658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTMzOTg2,size_16,color_FFFFFF,t_70" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20200324175703658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMTMzOTg2,size_16,color_FFFFFF,t_70" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"> </p>
+<h3 id="15、TCP三次握手、四次挥手"><a href="#15、TCP三次握手、四次挥手" class="headerlink" title="15、TCP三次握手、四次挥手"></a>15、TCP三次握手、四次挥手</h3><p><strong>三次握手</strong></p>
+<p>第一次握手：<br>主机A发出一个数据包并将SYN置1，表示希望建立连接。这个包中的序列号假设是x；</p>
+<p>第二次握手：<br>主机B收到A机器发送来的数据包后，通过SYN得知这是一个建立连接的请求，于是发送一个响应包并将SYN和ACK标记都置1。假设这个包中的序列号是y，而确认序列号必须是x+1，表示收到了A发过来的SYN。在TCP中，SYN被当作数据部分的一个字节。</p>
+<p>第三次握手：<br>A收到B的响应包后需进行确认，确认包中将ACK置1，并将确认序列号设置为y+1，表示收到了来自B的SYN。</p>
+<p><strong>四次挥手</strong><br>    TCP建立连接要进行三次握手，而断开连接要进行四次。这是由于TCP的半关闭造成的。因为TCP连接是全双工的（即数据可在两个方向上同时传递）所以进行关闭时每个方向上都要单独进行关闭。这个单方向的关闭就叫半关闭。当一方完成它的数据发送任务，就发送一个FIN来向另一方通告将要终止这个方向的连接。</p>
+<p>1、关闭客户端到服务器的连接：首先客户端A发送一个FIN，用来关闭客户端到服务器的数据传送，然后等待服务器的确认。其中终止标志位FIN=1，序列号seq=u</p>
+<p>2、服务器收到这个FIN=1，它发回一个ACK=1，确认号ack为收到的序号加1，ack=u+1。</p>
+<p>3、关闭服务器到客户端的连接：同时发送一个FIN=1给客户端，seq=w。</p>
+<p>4、客户端收到FIN后，并发回一个ACK报文确认，并将确认序号ack设置为收到序号加1，ack=w+1。首先进行关闭的一方将执行主动关闭，而另一方被动关闭。</p>
+<h3 id="16、TCP和UDP的特点及区别"><a href="#16、TCP和UDP的特点及区别" class="headerlink" title="16、TCP和UDP的特点及区别"></a>16、TCP和UDP的特点及区别</h3><p>1、TCP面向连接（如打电话要先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接。<br>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达；UDP尽最大努力交付，即不保证可靠交付。TCP通过校验和，重传机制，序号标识，滑动窗口，确认应答实现可靠传输。如丢包时的重发控制，还可以对次序乱掉的分包进行顺序控制。<br>3、UDP具有较好的实时性，工作效率比TCP高，适用于对高速传输和实时性有较高要求的通信或广播通信。<br>4、每一条TCP连接只能是点到点的；UDP支持一对一，一对多，多对一和多对多的交互通信。<br>5、TCP对系统资源要求较多；UDP对系统资源要求较少。</p>
+<h3 id="17、为什么UDP有时比TCP更有优势"><a href="#17、为什么UDP有时比TCP更有优势" class="headerlink" title="17、为什么UDP有时比TCP更有优势"></a>17、为什么UDP有时比TCP更有优势</h3><p>UDP以其简单、传输快的优势，在越来越多场景下取代了TCP，如实时游戏。</p>
+<p>（1） 网速的提升给UDP的稳定性提供可靠网络保障，丢包率会很低，如果使用应用层重传，能够保证传输的可靠性。<br>（2）TCP为实现网络通信的可靠性，使用了复杂的拥塞控制算法，建立了繁琐的握手过程，由于TCP内置的系统协议栈中，极难对其进行改进。采用TCP，一旦发生丢包，TCP会将后续的包缓存起来，等前面的包重传并接收到后再继续发送，延时会越来越大，基于UDP对实时性要求较为严格的情况下，采用自定义重传机制，能够把丢包产生的延迟降到最低，尽量减少网络问题对游戏造成的影响。</p>
+<h3 id="18、人与人之间视频用的是TCP还是UDP"><a href="#18、人与人之间视频用的是TCP还是UDP" class="headerlink" title="18、人与人之间视频用的是TCP还是UDP"></a>18、人与人之间视频用的是TCP还是UDP</h3><p>TCP和UDP是质量和实时性的权衡。</p>
+<p>1）拿视频网站来说，你完全可以缓冲20秒再播放，不会带来什么影响，但如果画面有马赛克之类的东西肯定是不好的，所以用TCP。<br>2）而对于视频聊天，如果缓冲5秒，相信整个聊天已经没法愉快的进行了，而这时出现一些画面质量的损失也是可以被接受，所以用UDP。</p>
+<h3 id="19、请问TCP用了哪些措施保证其可靠性"><a href="#19、请问TCP用了哪些措施保证其可靠性" class="headerlink" title="19、请问TCP用了哪些措施保证其可靠性"></a>19、请问TCP用了哪些措施保证其可靠性</h3><p>1、序列号、确认应答、超时重传<br>数据到达接收方，接收方需要发出一个确认应答，表示已经收到该数据段，并且确认序号会说明它下一次需要接收的数据序列号。如果发送迟迟未收到确认应答，那么可能是发送的数据丢失，也可能是确认应答丢失，这时发送方在等待一定时间后会进行重传。这个时间一般是2<em>RTT（报文段往返时间）+一个偏差值。<br>2、窗口机制与高速重发控制/快速重传（重复确认应答）<br>TCP会利用窗口控制来提高传输速度，意思是在一个窗口大小内，不用一定要等到应答才能发送下一段数据，窗口大小就是无需等待确认而可以继续发送数据的最大值。如果不使用窗口控制，每一个没收到确认应答的数据都要重发。<br>使用窗口控制，如果数据段1001-2000丢失，后面数据每次传输，确认应答都会不停地发送序号为1001的应答，表示我要接收1001开始的数据，发送端如果收到3次相同应答，就会立刻进行重发；但还有种情况有可能是数据都收到了，但是有的应答丢失了，这种情况不会进行重发，因为发送端知道，如果是数据段丢失，接收端不会放过它的，会疯狂向它提醒…<br>3、拥塞控制<br>如果把窗口定的很大，发送端连续发送大量的数据，可能会造成网络的拥堵（大家都在用网，你在这狂发，吞吐量就那么大，当然会堵），甚至造成网络的瘫痪。所以TCP在为了防止这种情况而进行了拥塞控制。<br>慢启动：定义拥塞窗口，一开始将窗口大小设为1，之后每次收到确认应答（经过一个RTT），将拥塞窗口大小</em>2。<br>拥塞避免：设置慢启动阈值，一般开始都设置为65536。拥塞避免是指当拥塞窗口大小到达这个阈值，拥塞窗口的值不再指数上升，而是加法增加（每次确认应答/每个RTT，拥塞窗口大小+1），以此来避免拥塞。<br>将报文段的超时重传看做拥塞，则一旦发生超时重传，我们需要先将阈值设置为当前窗口大小的一半，并且将窗口大小设为初值1，然后重新进入慢启动过程。<br>快速重传：在遇到3次重复应答（高速重发控制）时，代表收到了3个报文段，但是这之前的1个段丢失了，便对它进行立即重传。<br>然后，先将阈值设为当前窗口大小的一半，然后将拥塞窗口大小设为慢启动阈值+3的大小。<br>这样可以达到：在TCP通信时，网络吞吐量呈现逐渐的上升，并且随着拥堵来降低吞吐量，再进入慢慢上升的过程，网络不会轻易的发生瘫痪。</p>
+<h3 id="20、HTTPS"><a href="#20、HTTPS" class="headerlink" title="20、HTTPS"></a>20、HTTPS</h3><p>HTTPS（全称：Hypertext Transfer Protocol Socket Layer）,是以安全为目标的HTTP通道，简单讲就是HTTP的安全版。即HTTP下加入SSL层，HTTPS的安全基础是SSL。其所用的端口号是443。过程大致如下：</p>
+<p>建立连接获取证书：<br>（1）SSL客户端通过TCP和服务器建立连接之后（443端口），并且在一般的tcp连接协商（握手）过程中请求证书。即客户端发出一个消息给服务器，这个消息里面包含了自己可实现的算法列表和其它一些需要的信息，SSL的服务器端会回应一个数据包，这里面确定了这次通信所需要的算法，然后服务器向客户端返回证书。（证书里面包含服务器信息：域名。申请证书的公司，公共秘钥）。<br>证书验证<br>（2）Client在收到服务器返回的证书后，判断签发这个证书的公共签发机构，并使用这个机构的公共秘钥确认签名是否有效，客户端还会确保证书中列出的域名就是它正在连接的域名。<br>数据加密和传输<br>（3）如果确认证书有效，那么生成对称秘钥并使用服务器的公共秘钥进行加密。然后发送给服务器，服务器使用它的私钥对它进行解密，这样两台计算机可以开始进行对称加密进行通信。</p>
+<h3 id="21、请回答一下HTTP和HTTPS的区别，以及HTTPS有什么优缺点？"><a href="#21、请回答一下HTTP和HTTPS的区别，以及HTTPS有什么优缺点？" class="headerlink" title="21、请回答一下HTTP和HTTPS的区别，以及HTTPS有什么优缺点？"></a>21、请回答一下HTTP和HTTPS的区别，以及HTTPS有什么优缺点？</h3><p>HTTP协议和HTTPS协议区别如下：</p>
+<p>（1）HTTP协议是以明文的方式在网络中传输数据，而HTTPS协议传输的数据则是经过TLS加密后的，HTTPS具有更高的安全性。<br>（2）HTTPS在TCP三次握手阶段之后，还需要进行SSL的握手，协商加密使用的对称加密秘钥<br>（3）HTTPS协议需要服务端申请证书，浏览器端安装对应的根证书<br>（4）HTTP协议端口是80，HTTPS协议端口是443</p>
+<h3 id="22、说一说HTTP返回码"><a href="#22、说一说HTTP返回码" class="headerlink" title="22、说一说HTTP返回码"></a>22、说一说HTTP返回码</h3><p>HTTP协议的响应报文由状态行、响应头部和响应包体组成，其响应状态码总体描述如下：</p>
+<p>1XX：指示信息–表示请求已接收，继续处理<br>2XX：成功–表示请求已被成功接收、理解、接受<br>3XX：重定向–要完成请求必须进行更进一步的操作<br>4XX：客户端错误–请求有语法错误或请求无法实现<br>5XX：服务器端错误–服务器未能实现合法的请求</p>
+<h3 id="23、请说一说IP地址的作用，以及MAC地址作用"><a href="#23、请说一说IP地址的作用，以及MAC地址作用" class="headerlink" title="23、请说一说IP地址的作用，以及MAC地址作用"></a>23、请说一说IP地址的作用，以及MAC地址作用</h3><ul>
+<li>MAC地址是一个<strong>硬件地址</strong>，用来定义网络设备的位置，主要由数据链路层负责。</li>
+<li>IP地址是IP协议提供的一种统一的地址格式，为互联网上的每一个网络和每一台主机分配一个<strong>逻辑地址</strong>，以此来<strong>屏蔽物理地址的差异</strong>。</li>
+</ul>
+<h3 id="24、请说一下GET和POST的区别"><a href="#24、请说一下GET和POST的区别" class="headerlink" title="24、请说一下GET和POST的区别"></a>24、请说一下GET和POST的区别</h3><p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；<br><strong>区别：</strong><br>（1）get参数通过url传递，post放在request body中<br>（2）get请求在url中传递的参数是有长度限制的，而post没有<br>（3）get比post更不安全，因为参数直接暴露在url中，所以不能用来传递敏感信息<br>（4）get请求只能进行url编码，而post支持多种编码方式<br>（5）get请求参数会被完整保留在浏览历史记录里，而post中的参数不会被保留<br>（6）get和post本质上就是tcp连接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致它们在应用过程中出现一些不同。<br>（7）get产生一个tcp数据包；post产生两个tcp数据包</p>
+<h3 id="25、路由器的两个主要功能"><a href="#25、路由器的两个主要功能" class="headerlink" title="25、路由器的两个主要功能"></a>25、路由器的两个主要功能</h3><p>路由选择、分组转发</p>
+<h3 id="26、ARP是地址解析协议，简单语言解释一下工作原理。"><a href="#26、ARP是地址解析协议，简单语言解释一下工作原理。" class="headerlink" title="26、ARP是地址解析协议，简单语言解释一下工作原理。"></a>26、ARP是地址解析协议，简单语言解释一下工作原理。</h3><p>1：首先，每个主机都会在自己的ARP缓冲区中建立一个ARP列表，以表示IP地址和MAC地址之间的对应关系。</p>
+<p>2：当源主机要发送数据时，首先检查ARP列表中是否有对应IP地址的目的主机的MAC地址，如果有，则直接发送数据，如果没有，就向本网段的所有主机发送ARP数据包，该数据包包括的内容有：源主机IP地址，源主机MAC地址，目的主机的IP地址。</p>
+<p>3：当本网络的所有主机收到该ARP数据包时，首先检查数据包中的IP地址是否是自己的IP地址，如果不是，则忽略该数据包，如果是，则首先从数据包中取出源主机的IP和MAC地址写入到ARP列表中，如果已经存在，则覆盖，然后将自己的MAC地址写入ARP响应包中，告诉源主机自己是它想要找的MAC地址。</p>
+<p>4：源主机收到ARP响应包后。将目的主机的IP和MAC地址写入ARP列表，并利用此信息发送数据。如果源主机一直没有收到ARP响应数据包，表示ARP查询失败。<br><strong>广播发送ARP请求，单播发送ARP响应。</strong></p>
+<h3 id="27、如果已经建立了连接，但是客户端突然出现故障了怎么办？"><a href="#27、如果已经建立了连接，但是客户端突然出现故障了怎么办？" class="headerlink" title="27、如果已经建立了连接，但是客户端突然出现故障了怎么办？"></a>27、如果已经建立了连接，但是客户端突然出现故障了怎么办？</h3><p>TCP还设有一个保活计时器，显然，客户端如果出现故障，服务器不能一直等下去，白白浪费资源。服务器每收到一次客户端的请求后都会重新复位这个计时器，时间通常是设置为2小时，若两小时还没有收到客户端的任何数据，服务器就会发送一个探测报文段，以后每隔75分钟发送一次。若一连发送10个探测报文仍然没反应，服务器就认为客户端出了故障，接着就关闭连接。</p>
 
   
   
@@ -522,7 +541,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2021/05/14/hello-world/>http://example.com/2021/05/14/hello-world/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2021/05/14/%E8%AE%A1%E7%BD%91/>http://example.com/2021/05/14/%E8%AE%A1%E7%BD%91/</a></p>
               
             
           </blockquote>
@@ -539,10 +558,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-14T11:30:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-21T20:56:07+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 14, 2021</p>
+    <p>更新于：Mar 21, 2021</p>
   </a>
 </div>
 
@@ -561,7 +580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/05/14/%E8%AE%A1%E7%BD%91/&title= - Hexo&summary="
           
           >
           
@@ -573,7 +592,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/05/14/%E8%AE%A1%E7%BD%91/&title= - Hexo&summary="
           
           >
           
@@ -585,7 +604,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/05/14/%E8%AE%A1%E7%BD%91/&title= - Hexo&summary="
           
           >
           
@@ -615,12 +634,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2021/05/14/C++/'>
+        <a class='prev' href='/2021/05/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i></p>
-          <p class='content'>C++一、基础回顾1、函数重载 C++ 允许多个函数拥有相同的名字，只要它们的参数列表不同就可以，这就是函数的重载 。
-允许多个函数使用同一个函数名，需要参数类型，个数不同，只是形参的名称不同是...</p>
+          <p class='content'>数据结构和算法面试题总结1、动态规划算法简介　　动态规划算法是通过拆分问题，定义问题状态和状态之间的关系，使得问题能够以递推（或者说分治）的方式去解决。
+基本思想与策略　　动态规划算法的基本思想...</p>
         </a>
       
+      
+        <a class='next' href='/2021/05/14/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98/'>
+          <p class='title'><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>操作系统面试题1.进程的常见状态？以及各种状态之间的转换条件？
+就绪：进程已处于准备好运行的状态，即进程已分配到除CPU外的所有必要资源后，只要再获得CPU，便可立即执行。
+执行：进程已经获得C...</p>
+        </a>
       
     </div>
   
@@ -662,7 +688,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-text">1、OSI七层模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%8D%95%E5%B7%A5%E3%80%81%E5%8D%8A%E5%8F%8C%E5%B7%A5%E3%80%81%E5%85%A8%E5%8F%8C%E5%B7%A5"><span class="toc-text">2、单工、半双工、全双工</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E9%A2%91%E5%88%86%E5%A4%8D%E7%94%A8%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%90%84%E8%B7%AF%E4%BF%A1%E5%8F%B7%E9%97%B4%E7%9A%84%E5%B9%B2%E6%89%B0"><span class="toc-text">3、频分复用如何避免各路信号间的干扰</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B%E5%81%9C%E7%AD%89%E5%8D%8F%E8%AE%AEARQ-%E9%93%BE%E8%B7%AF%E5%B1%82-%E4%BC%A0%E8%BE%93%E5%B1%82"><span class="toc-text">4、简述一下停等协议ARQ (链路层&#x2F;传输层)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E8%BF%9E%E6%8E%A5%E4%B8%A4%E4%B8%AA%E5%B1%80%E5%9F%9F%E7%BD%91%E9%9C%80%E8%A6%81%E7%94%A8%E4%BB%80%E4%B9%88%E8%AE%BE%E5%A4%87%EF%BC%8C%E5%9C%A8%E5%93%AA%E4%B8%80%E5%B1%82"><span class="toc-text">5、连接两个局域网需要用什么设备，在哪一层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2%EF%BC%8C%E6%8A%A5%E6%96%87%E4%BA%A4%E6%8D%A2%EF%BC%8C%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%BB%A5%E5%8F%8A%E8%81%94%E7%B3%BB"><span class="toc-text">6、电路交换，报文交换，分组交换之间的区别以及联系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8D%8F%E8%AE%AE"><span class="toc-text">7、什么是滑动窗口协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%9A%84%E5%9B%9B%E7%A7%8D%E7%AE%97%E6%B3%95"><span class="toc-text">8、拥塞控制的四种算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">9、路由协议有哪些</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E3%80%81IPv4%E5%9C%B0%E5%9D%80%E7%BC%BA%E4%B9%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88"><span class="toc-text">10、IPv4地址缺乏的解决办法(替代方案)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11%E3%80%81IPv4%E5%92%8CIPv6%E5%A6%82%E4%BD%95%E7%9B%B8%E4%BA%92%E9%80%9A%E4%BF%A1%EF%BC%9F"><span class="toc-text">11、IPv4和IPv6如何相互通信？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">12、路由器和交换机的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13%E3%80%81%E5%BA%94%E7%94%A8%E5%B1%82%E6%9C%89%E4%BB%80%E4%B9%88%E5%8D%8F%E8%AE%AE%EF%BC%8C%E4%B8%BE%E5%87%BA%E4%B8%A4%E4%B8%AA%E5%8D%8F%E8%AE%AE%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">13、应用层有什么协议，举出两个协议的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B"><span class="toc-text">14、网络通信过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15%E3%80%81TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E3%80%81%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-text">15、TCP三次握手、四次挥手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16%E3%80%81TCP%E5%92%8CUDP%E7%9A%84%E7%89%B9%E7%82%B9%E5%8F%8A%E5%8C%BA%E5%88%AB"><span class="toc-text">16、TCP和UDP的特点及区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88UDP%E6%9C%89%E6%97%B6%E6%AF%94TCP%E6%9B%B4%E6%9C%89%E4%BC%98%E5%8A%BF"><span class="toc-text">17、为什么UDP有时比TCP更有优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#18%E3%80%81%E4%BA%BA%E4%B8%8E%E4%BA%BA%E4%B9%8B%E9%97%B4%E8%A7%86%E9%A2%91%E7%94%A8%E7%9A%84%E6%98%AFTCP%E8%BF%98%E6%98%AFUDP"><span class="toc-text">18、人与人之间视频用的是TCP还是UDP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19%E3%80%81%E8%AF%B7%E9%97%AETCP%E7%94%A8%E4%BA%86%E5%93%AA%E4%BA%9B%E6%8E%AA%E6%96%BD%E4%BF%9D%E8%AF%81%E5%85%B6%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="toc-text">19、请问TCP用了哪些措施保证其可靠性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20%E3%80%81HTTPS"><span class="toc-text">20、HTTPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#21%E3%80%81%E8%AF%B7%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8BHTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E4%BB%A5%E5%8F%8AHTTPS%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-text">21、请回答一下HTTP和HTTPS的区别，以及HTTPS有什么优缺点？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22%E3%80%81%E8%AF%B4%E4%B8%80%E8%AF%B4HTTP%E8%BF%94%E5%9B%9E%E7%A0%81"><span class="toc-text">22、说一说HTTP返回码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23%E3%80%81%E8%AF%B7%E8%AF%B4%E4%B8%80%E8%AF%B4IP%E5%9C%B0%E5%9D%80%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%8C%E4%BB%A5%E5%8F%8AMAC%E5%9C%B0%E5%9D%80%E4%BD%9C%E7%94%A8"><span class="toc-text">23、请说一说IP地址的作用，以及MAC地址作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24%E3%80%81%E8%AF%B7%E8%AF%B4%E4%B8%80%E4%B8%8BGET%E5%92%8CPOST%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">24、请说一下GET和POST的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#25%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E4%B8%A4%E4%B8%AA%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD"><span class="toc-text">25、路由器的两个主要功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#26%E3%80%81ARP%E6%98%AF%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%EF%BC%8C%E7%AE%80%E5%8D%95%E8%AF%AD%E8%A8%80%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8B%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E3%80%82"><span class="toc-text">26、ARP是地址解析协议，简单语言解释一下工作原理。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#27%E3%80%81%E5%A6%82%E6%9E%9C%E5%B7%B2%E7%BB%8F%E5%BB%BA%E7%AB%8B%E4%BA%86%E8%BF%9E%E6%8E%A5%EF%BC%8C%E4%BD%86%E6%98%AF%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AA%81%E7%84%B6%E5%87%BA%E7%8E%B0%E6%95%85%E9%9A%9C%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="toc-text">27、如果已经建立了连接，但是客户端突然出现故障了怎么办？</span></a></li></ol>
     </div>
   </section>
 
@@ -680,8 +706,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="Hello World";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

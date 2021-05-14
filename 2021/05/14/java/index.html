@@ -22,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hello World - Hexo</title>
+  <title>Hexo</title>
   
 
   
@@ -438,73 +438,164 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <h1 class="title">
-        Hello World
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="">
-    <p>请设置文章作者</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 14, 2021</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="Hello World" data-path="/2021/05/14/hello-world/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
-      </div>
-    
   </div>
 
 
   
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+  <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="一、基本知识"><a href="#一、基本知识" class="headerlink" title="一、基本知识"></a>一、基本知识</h2><blockquote>
+<p>特性：面向对象、可移植性、分布式、动态性（反射）、多线程、安全性、健壮性</p>
+</blockquote>
+<p>java版本：</p>
+<p>​    javaSE：标准版（桌面程序、控制态）</p>
+<p>​    javaEE：企业级开发（Web端，服务器开发）</p>
+<h3 id="1、JDK-gt-JRE-gt-JVM"><a href="#1、JDK-gt-JRE-gt-JVM" class="headerlink" title="1、JDK &gt; JRE &gt; JVM"></a>1、JDK &gt; JRE &gt; JVM</h3><p>​    JDK：java开发者工具</p>
+<p>​    JRE：java运行时环境</p>
+<p>​    JVM：java虚拟机（跨平台）</p>
+<h3 id="2、hello-world"><a href="#2、hello-world" class="headerlink" title="2、hello world"></a>2、hello world</h3><pre><code> hello_class.java文件
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> hello;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">hello_class</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;hello world!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;  javac hello_class.java  <span class="comment">#编译java文件为hello_class.class文件</span></span><br><span class="line">&gt;  java hello_class   <span class="comment">#运行文件</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>​    <strong>文件名和类名必须保持一致</strong></p>
+<h3 id="3、强类型语言"><a href="#3、强类型语言" class="headerlink" title="3、强类型语言"></a>3、强类型语言</h3><p>所有变量先声明再使用</p>
+<p>基本类型语言：整数（int \ byte \ short \ long）、小数（float、double）、字符（char）、字符串（String）、boolean、Integer为一个类</p>
+<p>引用类型：类、接口、数组</p>
+<h3 id="4、包机制"><a href="#4、包机制" class="headerlink" title="4、包机制"></a>4、包机制</h3><p>类似于namespace，可以看作是文件夹。</p>
+<p>一般公司利用公司域名倒置进行包名：com.baidu.www</p>
+<p>import导入的是包</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.baidu.www;  <span class="comment">//必须放在第一行，表示包的路径</span></span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">import</span> java.util.*;      <span class="comment">//导入所有</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="5、javaDoc"><a href="#5、javaDoc" class="headerlink" title="5、javaDoc"></a>5、javaDoc</h3><p>javadoc 命令用来生成自己的API文档</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.baidu.www;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*<span class="doctag">@author</span> rentengyu</span></span><br><span class="line"><span class="comment">*<span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment">*<span class="doctag">@since</span> 1.8</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;javadoc -encoding UTF-8 -charset UTF-8 hello_class.java</span><br><span class="line">//会多出很多文件，有一个index.html，可以可视化</span><br></pre></td></tr></table></figure>
+
+<h3 id="6、Scanner对象（类）"><a href="#6、Scanner对象（类）" class="headerlink" title="6、Scanner对象（类）"></a>6、Scanner对象（类）</h3><blockquote>
+<p>可以获取用户的输入（java.util.Scanner）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"><span class="keyword">if</span>(scanner.hasNext()) &#123;</span><br><span class="line">	String str=scanner.next();</span><br><span class="line">	System.out.print(str);</span><br><span class="line">&#125;	</span><br><span class="line">scanner.close();  <span class="comment">//流之类的东西，用完关闭</span></span><br></pre></td></tr></table></figure>
+
+<p>通过Scanner类的next（）和nextLine（）方法获取输入的字符串，并且可以通过hasNext（）和hasNextLine（）判断是否还有输入的数据。</p>
+<p>next（）和nextLine（）的区别是：next对输入有效字符之前，会将其自动去掉，并且在有效字符后将其后边的空白作为分隔符，nextline以回车符作为分隔符。</p>
+<p>字符串的判断用s.equals(“hello”)</p>
+<h3 id="7、foreach"><a href="#7、foreach" class="headerlink" title="7、foreach"></a>7、foreach</h3><p> foreach 循环语句是 for 语句的特殊简化版本，主要用于执行遍历功能的循环。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明并初始化int数组</span></span><br><span class="line"><span class="keyword">int</span>[] numbers = &#123; <span class="number">43</span>, <span class="number">32</span>, <span class="number">53</span>, <span class="number">54</span>, <span class="number">75</span>, <span class="number">7</span>, <span class="number">10</span> &#125;;</span><br><span class="line">System.out.println(<span class="string">&quot;----for each----&quot;</span>);</span><br><span class="line"><span class="comment">// for-each语句</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> item : numbers) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Count is:&quot;</span> + item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8、方法"><a href="#8、方法" class="headerlink" title="8、方法"></a>8、方法</h3><p>system为一个类，out为一个对象，println（）为方法</p>
+<p>可变长参数，一个方法只有一个，且必须在最后一个</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span>  <span class="keyword">void</span> <span class="title">test</span> <span class="params">(<span class="keyword">int</span>... i)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(i.length==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">	System.out.println(i[<span class="number">0</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="9、数组"><a href="#9、数组" class="headerlink" title="9、数组"></a>9、数组</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明数组</span></span><br><span class="line"><span class="keyword">int</span>[] nums=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;      <span class="comment">//静态初始化 </span></span><br><span class="line"><span class="keyword">int</span> nums[]; <span class="comment">//没有分配空间</span></span><br><span class="line"><span class="keyword">int</span>[] array_obj = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];  <span class="comment">//分配了空间</span></span><br><span class="line">nums.length		<span class="comment">//获取长度</span></span><br></pre></td></tr></table></figure>
+
+<p>数组的长度是固定的，一旦被创建大小不能被改变。数组变量属于引用类型，数组本身在堆中。</p>
+<h4 id="Arrays类（java-util-Arrays）"><a href="#Arrays类（java-util-Arrays）" class="headerlink" title="Arrays类（java.util.Arrays）"></a>Arrays类（java.util.Arrays）</h4><p>包括许多排序方法等，Arrays.sort(a),方法可以直接通过类名来调用，因为都是静态方法。</p>
+<p>Arrays.fill(a,0);将数组a的值都赋为0。</p>
+<p>Arrays.toString(a);</p>
+<p>1）int binarySearch(type[] a, type key)</p>
+<p>使用二分法查询 key 元素值在 a 数组中出现的索引，如果 a 数组不包含 key 元素值，则返回负数。调用该方法时要求数组中元素己经按升序排列，这样才能得到正确结果。</p>
+<p> 2）int binarySearch(type[] a, int fromIndex, int toIndex, type key)</p>
+<p>这个方法与前一个方法类似，但它只搜索 a 数组中 fromIndex 到 toIndex 索引的元素。调用该方法时要求数组中元素己经按升序排列，这样才能得到正确结果。</p>
+<p>3）type[] copyOf(type[] original, int length)</p>
+<p>这个方法将会把 original 数组复制成一个新数组，其中 length 是新数组的长度。如果 length 小于 original 数组的长度，则新数组就是原数组的前面 length 个元素，如果 length 大于 original 数组的长度，则新数组的前面元索就是原数组的所有元素，后面补充 0（数值类型）、false（布尔类型）或者 null（引用类型）。</p>
+<p> 4）type[] copyOfRange(type[] original, int from, int to)</p>
+<p>这个方法与前面方法相似，但这个方法只复制 original 数组的 from 索引到 to 索引的元素。</p>
+<p>5）boolean equals(type[] a, type[] a2)</p>
+<p>如果 a 数组和 a2 数组的长度相等，而且 a 数组和 a2 数组的数组元素也一一相同，该方法将返回 true。</p>
+<p> 6）void fill(type[] a, type val)</p>
+<p>该方法将会把 a 数组的所有元素都赋值为 val。</p>
+<p> 7）void fill(type[] a, int fromIndex, int toIndex, type val)</p>
+<p>该方法与前一个方法的作用相同，区别只是该方法仅仅将 a 数组的 fromIndex 到 toIndex 索引的数组元素赋值为 val。</p>
+<p>8）void sort(type[] a)</p>
+<p>该方法对 a 数组的数组元素进行排序。</p>
+<p>9）void sort(type[] a, int fromIndex, int toIndex)</p>
+<p>该方法与前一个方法相似，区别是该方法仅仅对 fromIndex 到 toIndex 索引的元素进行排序。<br>该方法将一个数组转换成一个字符串。该方法按顺序把多个数组元素连缀在一起，多个数组元素使用英文逗号和空格隔开。</p>
+<p>10）String toString(type[] a)</p>
+<p>该方法将一个数组转换成一个字符串。该方法按顺序把多个数组元素连缀在一起，多个数组元素使用英文逗号<code>,</code>和空格隔开。 </p>
+<h3 id="10、对象"><a href="#10、对象" class="headerlink" title="10、对象"></a>10、对象</h3><p>new创建对象，会分配内存和基本初始化操作；</p>
+<p><strong>构造函数</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//构造函数</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>private私有属性</p>
+<h2 id="二、java多线程"><a href="#二、java多线程" class="headerlink" title="二、java多线程"></a>二、java多线程</h2><h3 id="1、实现"><a href="#1、实现" class="headerlink" title="1、实现"></a>1、实现</h3><p>通过extends Thread实现，需要重写run（）方法，然后实例化类，调用start（）函数。</p>
+<p>通过实现Runnable接口实现，需要重写run（）方法，然后实例化一个类和一个Thread类。</p>
+<p>通过callable接口实现。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">te test=<span class="keyword">new</span> te();</span><br><span class="line"><span class="keyword">new</span> Thread(test,<span class="string">&quot;xiaoming&quot;</span>).start();</span><br><span class="line"><span class="keyword">new</span> Thread(test,<span class="string">&quot;laoshi&quot;</span>).start();</span><br><span class="line"><span class="keyword">new</span> Thread(test,<span class="string">&quot;huangniudang&quot;</span>).start();</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、静态代理（多线程实现原理）（设计模式）"><a href="#2、静态代理（多线程实现原理）（设计模式）" class="headerlink" title="2、静态代理（多线程实现原理）（设计模式）"></a>2、静态代理（多线程实现原理）（设计模式）</h3><p>两个类实现同一个接口，然后代理对象接受被代理对象为参数，之后通过代理对象完成功能。</p>
+<p>代理对象可以实现真是对象实现不了的事情，真实对象则做自己的事。</p>
+<p>Thread为代理类，自己的类为真实对象，共同实现Runnable接口，重写run（）方法。</p>
+<h3 id="3、lamda表达式"><a href="#3、lamda表达式" class="headerlink" title="3、lamda表达式"></a>3、lamda表达式</h3><p>需要提前定义一个函数式接口（interface中只定义一个方法）</p>
+<p>Runnable为函数式接口</p>
+<h3 id="4、join"><a href="#4、join" class="headerlink" title="4、join"></a>4、join</h3><p>合并线程，先执行此线程再执行其他线程。</p>
+<h3 id="5、守护线程"><a href="#5、守护线程" class="headerlink" title="5、守护线程"></a>5、守护线程</h3><p>thread.setDaemon(true/false)</p>
+<h3 id="6、线程同步（synchronized）"><a href="#6、线程同步（synchronized）" class="headerlink" title="6、线程同步（synchronized）"></a>6、线程同步（synchronized）</h3><p>队列+锁</p>
+<p>synchronized关键字：同步方法、同步块，锁的是this，每一个对象都有一把锁</p>
+<p>synchronized（obj）{同步块}   obj为监视器（可以为任何对象），默认为this，obj可以为account，锁的是变化的量。</p>
+<h3 id="7、JUC"><a href="#7、JUC" class="headerlink" title="7、JUC"></a>7、JUC</h3><p>安全类型的集合</p>
+<h3 id="8、Lock"><a href="#8、Lock" class="headerlink" title="8、Lock"></a>8、Lock</h3><p>显式加锁，synchronized是隐式锁。</p>
+<p>lock只有代码块锁，synchronized有代码块和方法锁。</p>
+<p>lock锁JVM使用较少的时间来调度线程，性能较好，并且具有更好的扩展性。</p>
+<p>使用顺序：Lock&gt;同步代码块&gt;同步方法锁</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> ReentrantLock lock = <span class="keyword">new</span> ReentrantLock();<span class="comment">//可重写锁</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    lock.lock(); <span class="comment">//加锁</span></span><br><span class="line">    <span class="comment">//内容</span></span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">    lock.unlock();  <span class="comment">//解锁</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="9、线程通信"><a href="#9、线程通信" class="headerlink" title="9、线程通信"></a>9、线程通信</h3><p>生产者消费者</p>
+<p>wait（）、notify（）</p>
+<h3 id="10、线程池"><a href="#10、线程池" class="headerlink" title="10、线程池"></a>10、线程池</h3><p>便于线程管理</p>
+<p>API：ExecutorService和Executors</p>
+<h2 id="三、注解（Annotation）和反射（Reflection）"><a href="#三、注解（Annotation）和反射（Reflection）" class="headerlink" title="三、注解（Annotation）和反射（Reflection）"></a>三、注解（Annotation）和反射（Reflection）</h2><p>注解不是程序本身，可以对程序作出解释，可以被其他程序（比如：编译器）读取。</p>
+<h3 id="1、内置注解"><a href="#1、内置注解" class="headerlink" title="1、内置注解"></a>1、内置注解</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span> <span class="comment">//定义在java.lang.Override中，此注解只适用于修辞，表示一个方法打算重写超类中的另一个方法声明</span></span><br><span class="line"><span class="meta">@Deprecated</span>  <span class="comment">//表示不建议使用</span></span><br><span class="line"><span class="meta">@SuppressWarnings</span>（） <span class="comment">//用来抑制编译时的警告信息，需要添加参数--&quot;all&quot;\&quot;unchecked&quot;\value=&#123;&quot;unchecked&quot;,&quot;deprecation&quot;&#125;  镇压警告</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2、反射"><a href="#2、反射" class="headerlink" title="2、反射"></a>2、反射</h3><blockquote>
+<p> 实例化对象-&gt;getClass（）方法-&gt;得到完整的包类的名称</p>
+</blockquote>
+<p>主要的API：</p>
+<p>​    java.lang.Class    java.lang.reflect.Method    java.lang.reflect.Field    java.lang.reflect.Constructor</p>
+<p>获得Class类：（Class对象只有一个，不管什么方法获得的都相等）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class c1=person.getClass();  <span class="comment">//person为一个类的实例对象</span></span><br><span class="line">Class c2=Class.forName(<span class="string">&quot;com.teng.Person&quot;</span>)  <span class="comment">//通过Class的静态方法获得</span></span><br><span class="line">Class c3=Student.class;  <span class="comment">//通过类的属性class获得，安全高效</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、类的初始化过程"><a href="#3、类的初始化过程" class="headerlink" title="3、类的初始化过程"></a>3、类的初始化过程</h3><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182924942.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182924942.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1617182924942"></p>
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182939075.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182939075.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1617182939075"></p>
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182976985.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1617182976985.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1617182976985"></p>
+<p><strong>类加载器的作用、双亲委派机制</strong></p>
+<p>*.java文件  -&gt;  java编译器 -&gt; *.class字节码文件-》类加载器（有缓存）-》字节码校验器-》解释器-》jvm</p>
+<blockquote>
+<p>类加载器的作用是把类加载进内存中</p>
+</blockquote>
+<p>加载器有三类：引导类加载器（负责java平台核心库，ra,jar,不能被获取）、扩展类加载器（导入jre/lib/ext下的包）、系统类加载器（用户类加载器，负责加载用户自定义的类）</p>
+<p>双亲委派机制：如果自己定义的包在更高级的包中存在，则会加载高级包。</p>
+<p><strong>类的运行时结构</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Class c1=Class.forName(<span class="string">&quot;com.teng.Person&quot;</span>);</span><br><span class="line">System.out.println(c1.getName());<span class="comment">//获取类的名字  com.teng.Person</span></span><br><span class="line">System.out.println(c1.getSimpleName());<span class="comment">//获取类的简单名字   Person</span></span><br><span class="line">System.out.println(c1.getFields());  <span class="comment">//获取public属性</span></span><br><span class="line">System.out.println(c1.getDeclaredFields());  <span class="comment">//获取全部属性,数组</span></span><br><span class="line">System.out.println(c1.getMethods());  <span class="comment">//获取public方法</span></span><br><span class="line">System.out.println(c1.getDeclaredMethods());  <span class="comment">//获取全部方法,数组</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>动态创建对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Class c1=Class.forName(<span class="string">&quot;com.teng.Person&quot;</span>);</span><br><span class="line">Person p=(Person)c1.newInstance();<span class="comment">//创建实例对象，本质上必须调用无参构造器</span></span><br><span class="line"><span class="comment">//通过构造器创造对象</span></span><br><span class="line">Constructor constructor=c1.getDeclaredConstructor(String.class,<span class="keyword">int</span>.class,<span class="keyword">int</span>.class);</span><br><span class="line">constructor.newInstance(<span class="string">&quot;sa&quot;</span>,<span class="number">1</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、扩充"><a href="#四、扩充" class="headerlink" title="四、扩充"></a>四、扩充</h2><h3 id="1、Collection集合扩充"><a href="#1、Collection集合扩充" class="headerlink" title="1、Collection集合扩充"></a>1、Collection集合扩充</h3><ul>
+<li>接口<ul>
+<li>Collection</li>
+<li>List</li>
+<li>Set</li>
+<li>Map</li>
+</ul>
+</li>
+<li>实现类<ul>
+<li>ArrayList</li>
+<li>LinkedList</li>
+<li>HashSet</li>
+<li>TreeSet</li>
+<li>HashMap</li>
+</ul>
+</li>
+<li>算法<ul>
+<li>搜索</li>
+<li>排序</li>
+</ul>
+</li>
+</ul>
+<p>Vector、Stack、Dictionary、Hashtable、Properties、BitSet</p>
+<h3 id="2、HashMap原理"><a href="#2、HashMap原理" class="headerlink" title="2、HashMap原理"></a>2、HashMap原理</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/samniwu/article/details/90550196">https://blog.csdn.net/samniwu/article/details/90550196</a></p>
+<p>capacity为2的幂的原因：可以减少冲突概率，并且可以减少扩容时对index的修改</p>
 
   
   
@@ -522,7 +613,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2021/05/14/hello-world/>http://example.com/2021/05/14/hello-world/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2021/05/14/java/>http://example.com/2021/05/14/java/</a></p>
               
             
           </blockquote>
@@ -539,10 +630,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-14T11:30:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-04-27T20:49:10+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 14, 2021</p>
+    <p>更新于：Apr 27, 2021</p>
   </a>
 </div>
 
@@ -561,7 +652,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/05/14/java/&title= - Hexo&summary="
           
           >
           
@@ -573,7 +664,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/05/14/java/&title= - Hexo&summary="
           
           >
           
@@ -585,7 +676,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/05/14/hello-world/&title=Hello World - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/05/14/java/&title= - Hexo&summary="
           
           >
           
@@ -615,12 +706,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2021/05/14/C++/'>
+        <a class='prev' href='/2021/05/14/Java%E5%90%8E%E7%AB%AF%E6%95%99%E7%A8%8B/'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i></p>
-          <p class='content'>C++一、基础回顾1、函数重载 C++ 允许多个函数拥有相同的名字，只要它们的参数列表不同就可以，这就是函数的重载 。
-允许多个函数使用同一个函数名，需要参数类型，个数不同，只是形参的名称不同是...</p>
+          <p class='content'>Java后端教程一、JavaWeb1、基本概念
+静态资源：html，css，数据不会发生变化
+动态资源：数据会发生变化，在不同时间、地点看好的信息不同（技术栈：Serviet/JSP，ASP，P...</p>
         </a>
       
+      
+        <a class='next' href='/2021/05/14/Docker%E6%95%99%E7%A8%8B/'>
+          <p class='title'><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Docker教程一、网络1、四种模式Host             容器将不会虚拟出自己的网卡，配置自己的IP等，而是使用宿主机的IP和端口。Bridge          此模式会为每一个容...</p>
+        </a>
       
     </div>
   
@@ -662,7 +759,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">一、基本知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81JDK-gt-JRE-gt-JVM"><span class="toc-text">1、JDK &gt; JRE &gt; JVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81hello-world"><span class="toc-text">2、hello world</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%B1%BB%E5%9E%8B%E8%AF%AD%E8%A8%80"><span class="toc-text">3、强类型语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E5%8C%85%E6%9C%BA%E5%88%B6"><span class="toc-text">4、包机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81javaDoc"><span class="toc-text">5、javaDoc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81Scanner%E5%AF%B9%E8%B1%A1%EF%BC%88%E7%B1%BB%EF%BC%89"><span class="toc-text">6、Scanner对象（类）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81foreach"><span class="toc-text">7、foreach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E6%96%B9%E6%B3%95"><span class="toc-text">8、方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E6%95%B0%E7%BB%84"><span class="toc-text">9、数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Arrays%E7%B1%BB%EF%BC%88java-util-Arrays%EF%BC%89"><span class="toc-text">Arrays类（java.util.Arrays）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E3%80%81%E5%AF%B9%E8%B1%A1"><span class="toc-text">10、对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81java%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="toc-text">二、java多线程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%AE%9E%E7%8E%B0"><span class="toc-text">1、实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%88%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%89%EF%BC%88%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="toc-text">2、静态代理（多线程实现原理）（设计模式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81lamda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-text">3、lamda表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81join"><span class="toc-text">4、join</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E5%AE%88%E6%8A%A4%E7%BA%BF%E7%A8%8B"><span class="toc-text">5、守护线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%EF%BC%88synchronized%EF%BC%89"><span class="toc-text">6、线程同步（synchronized）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81JUC"><span class="toc-text">7、JUC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81Lock"><span class="toc-text">8、Lock</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-text">9、线程通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="toc-text">10、线程池</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%B3%A8%E8%A7%A3%EF%BC%88Annotation%EF%BC%89%E5%92%8C%E5%8F%8D%E5%B0%84%EF%BC%88Reflection%EF%BC%89"><span class="toc-text">三、注解（Annotation）和反射（Reflection）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%86%85%E7%BD%AE%E6%B3%A8%E8%A7%A3"><span class="toc-text">1、内置注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%8F%8D%E5%B0%84"><span class="toc-text">2、反射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E7%B1%BB%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E8%BF%87%E7%A8%8B"><span class="toc-text">3、类的初始化过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%89%A9%E5%85%85"><span class="toc-text">四、扩充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81Collection%E9%9B%86%E5%90%88%E6%89%A9%E5%85%85"><span class="toc-text">1、Collection集合扩充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81HashMap%E5%8E%9F%E7%90%86"><span class="toc-text">2、HashMap原理</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -680,8 +777,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="Hello World";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

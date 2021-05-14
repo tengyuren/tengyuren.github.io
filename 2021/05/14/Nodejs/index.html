@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - Hexo</title>
+  <title>Hexo</title>
   
 
   
@@ -104,7 +102,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +353,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,522 +429,222 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        算法总结一、滑动窗口问题1、无重复字符的最长子串题目：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-题解：这道题主要用到思路是：滑动窗口
-什么是滑动窗口？
-其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，我们要移动这个队列！
-如何移动？
-我们只要把队列的左边的元素移...
-      
     
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
+  
+  <h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>​    Nodejs 擅长高并发，java 等后端语言为每一个客户端连接创建一个线程，而Nodejs则是仅仅使用一个线程，当有用户连接了，就触发一个内部事件，通过非阻塞I/O、事件驱动机制，让nodejs程序宏观上是并行的，一个8G内存的服务器可以同时处理4万用户的并发连接。</p>
+<p>​    supervisor工具，让nodejs代码在改变时实时自动更新</p>
+<blockquote>
+<p>D:&gt; supervisor test.js</p>
+</blockquote>
+<h2 id="二、知识"><a href="#二、知识" class="headerlink" title="二、知识"></a>二、知识</h2><p>​    1、commonjs就是模块化的标准，nodejs就是commonjs（模块化）的实现。</p>
+<p>​    2、node应用由模块组成，采用commonjs模块规范</p>
+<p>​    3、模块分为两大类：Node中提供的模块，称为核心模块（HTTP模块、URL模块、FS模块）在        Node启动时自动加载到内存中；</p>
+<p>​        另一类是用户编写的模块，称为文件模块（自定义模块，需要路径）。</p>
+<h3 id="1）模块化"><a href="#1）模块化" class="headerlink" title="1）模块化"></a>1）模块化</h3><p>​        通过将.js文件中的方法抽象成一个模块，用exports或者module.exports暴露出接口，外部才能访问。</p>
+<p>​        自定义模块都是放在node_modules中，并且在模块文件夹中require自动找index.js文件作为模块的主文件加载</p>
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613033308490.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613033308490.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613033308490"></p>
+<p>通过在模块文件夹中运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y            <span class="comment">#可以生成package.json配置文件</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613033996579.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613033996579.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613033996579"></p>
+<p>​            其中main的键值对代表模块的入口文件，可以自定义</p>
+<h4 id="包的概念"><a href="#包的概念" class="headerlink" title="包的概念"></a>包的概念</h4><p>​        包是由许多模块组成的</p>
+<p>​        <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613034221345.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613034221345.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613034221345"></p>
+<h4 id="npm命令"><a href="#npm命令" class="headerlink" title="npm命令"></a>npm命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm -v   <span class="comment">#查看npm版本</span></span><br><span class="line">npm install  package@1.0.0  <span class="comment">#加@为指定版本安装</span></span><br><span class="line">npm uninstall  package</span><br><span class="line">npm list    <span class="comment">#查看当前目录下已经安装的node包</span></span><br><span class="line">npm info package    <span class="comment">#查看模块的信息</span></span><br><span class="line">npm install md5 --save    <span class="comment">#--save 命令可以将依赖保存到package.json文件中 ，新的nodejs默认自动加上--save</span></span><br><span class="line"><span class="comment">#之后通过 npm i 来直接安装所依赖的所有包</span></span><br></pre></td></tr></table></figure>
+
+<p>​    <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613034682032.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613034682032.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613034682032"></p>
+<h4 id="package-json文件"><a href="#package-json文件" class="headerlink" title="package.json文件"></a>package.json文件</h4><p>​    定义了这个项目所需要的各种模块，以及项目的配置信息（名称、版本、许可证等元数据）</p>
+<p>​    1、创建package.json文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init --yes 或者 npm init</span><br></pre></td></tr></table></figure>
+
+<p>​    2、文件内容</p>
+<p>​        <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613035736647.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613035736647.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613035736647"></p>
+<p>​        dependencies中保存依赖包的信息；</p>
+<p>​        devdependencies中保存工具类的依赖包信息；</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init packagename --save-dev     <span class="comment">#保存到devdependencies中</span></span><br></pre></td></tr></table></figure>
+
+<p>​        <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613035926508.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613035926508.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613035926508"></p>
+<h3 id="2）FS模块"><a href="#2）FS模块" class="headerlink" title="2）FS模块"></a>2）FS模块</h3><p>​    <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613107597184.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613107597184.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613107597184"></p>
+<h4 id="1、fs-stat"><a href="#1、fs-stat" class="headerlink" title="1、fs.stat( )"></a>1、fs.stat( )</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// test.js</span></span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">&quot;fs&quot;</span>);</span><br><span class="line">fs.stat(<span class="string">&#x27;./html&#x27;</span>,<span class="function">(<span class="params">err,data</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`是文件：<span class="subst">$&#123;data.isFile()&#125;</span>`</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">`是目录：<span class="subst">$&#123;data.isDirectory()&#125;</span>`</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node test.js     <span class="comment">#运行文件</span></span><br><span class="line"><span class="comment">#是文件：false</span></span><br><span class="line"><span class="comment">#是目录：true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2、fs-mkdir"><a href="#2、fs-mkdir" class="headerlink" title="2、fs.mkdir()"></a>2、fs.mkdir()</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">fs.mkdir(<span class="string">&#x27;./css&#x27;</span>,<span class="function">(<span class="params">err</span>)=&gt;</span>&#123;    </span><br><span class="line">    <span class="comment">//参数path：目录路径  mode：目录权限，默认777  callback：回调函数，传递异常参数err</span></span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;创建成功&#x27;</span>)；</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//如果文件目录已经存在，则报错</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3、fs-writeFile"><a href="#3、fs-writeFile" class="headerlink" title="3、fs.writeFile()"></a>3、fs.writeFile()</h4><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613108477725.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613108477725.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613108477725"></p>
+<h4 id="4、fs中的流以及管道流"><a href="#4、fs中的流以及管道流" class="headerlink" title="4、fs中的流以及管道流"></a>4、fs中的流以及管道流</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>)</span><br><span class="line"><span class="keyword">var</span> readStream = fs.createReadStream(<span class="string">&#x27;./data/input.txt&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213245665.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213245665.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613213245665"></p>
+<p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213437807.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213437807.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613213437807"></p>
+<p>​                管道流</p>
+<p>​        <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213667444.png" class="lazyload" data-srcset="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1613213667444.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="1613213667444"></p>
+<h3 id="3）express框架"><a href="#3）express框架" class="headerlink" title="3）express框架"></a>3）express框架</h3><h4 id="1、cookie中间件（保存在用户浏览器缓存上）"><a href="#1、cookie中间件（保存在用户浏览器缓存上）" class="headerlink" title="1、cookie中间件（保存在用户浏览器缓存上）"></a>1、cookie中间件（保存在用户浏览器缓存上）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install cookie-parser     <span class="comment">#安装cookie-parser模块</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app=express()</span><br><span class="line"><span class="keyword">const</span> cookieParser=<span class="built_in">require</span>(<span class="string">&#x27;cookie_parser&#x27;</span>)</span><br><span class="line"><span class="comment">// 配置cookieParser中间件</span></span><br><span class="line">app.use(cookieParser())</span><br><span class="line">app.get(<span class="string">&#x27;/&#x27;</span>，(req,res)=&gt;&#123;</span><br><span class="line">    <span class="comment">//在首页设置cookie</span></span><br><span class="line">    res.cookie(<span class="string">&quot;cookie_name&quot;</span>,<span class="string">&quot;cookie_value&quot;</span>,&#123;<span class="attr">maxAge</span>:<span class="number">1000</span>*<span class="number">60</span>*<span class="number">60</span>&#125;)  <span class="comment">//过期时间maxAge</span></span><br><span class="line">&#125;)</span><br><span class="line">app.get(<span class="string">&#x27;/get&#x27;</span>，(req,res)=&gt;&#123;</span><br><span class="line">    <span class="comment">//获取cookie</span></span><br><span class="line">    <span class="keyword">let</span> username=req.cookie.cookie_name</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、session中间件（保存在服务器缓存上）"><a href="#2、session中间件（保存在服务器缓存上）" class="headerlink" title="2、session中间件（保存在服务器缓存上）"></a>2、session中间件（保存在服务器缓存上）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install express-session --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> session=<span class="built_in">require</span>(<span class="string">&#x27;express-session&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app=express()</span><br><span class="line"><span class="comment">//配置session中间件</span></span><br><span class="line">app.use(session(&#123;</span><br><span class="line">    <span class="attr">secret</span>:<span class="string">&#x27;keybord cat&#x27;</span>,  <span class="comment">//用于生成服务器端的签名，字符串可以随意</span></span><br><span class="line">    <span class="attr">resave</span>:<span class="literal">false</span>,			<span class="comment">//强制保存session，即使没有变化</span></span><br><span class="line">    <span class="attr">saveUninitialized</span>:<span class="literal">true</span>,  <span class="comment">//强制将未初始化的session存储</span></span><br><span class="line">    <span class="attr">cookie</span>:&#123;</span><br><span class="line">        <span class="attr">maxAge</span>:<span class="number">1000</span>*<span class="number">60</span>,</span><br><span class="line">        <span class="attr">secure</span>:<span class="literal">false</span>		<span class="comment">//true表示只有http协议可以访问cookie</span></span><br><span class="line">    &#125;，</span><br><span class="line">    <span class="attr">rolling</span>:<span class="literal">true</span></span><br><span class="line">&#125;))</span><br><span class="line">app.get(<span class="string">&#x27;/&#x27;</span>，(req,res)=&gt;&#123;</span><br><span class="line">    <span class="comment">//获取session</span></span><br><span class="line">    <span class="keyword">if</span>(req.session.username)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;张三已经登录&quot;</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;没有登录&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">app.get(<span class="string">&#x27;/get&#x27;</span>，(req,res)=&gt;&#123;</span><br><span class="line">    <span class="comment">//设置session</span></span><br><span class="line">    req.session.username=<span class="string">&#x27;zhangsan&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/05/14/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/05/14/Nodejs/>http://example.com/2021/05/14/Nodejs/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-18T16:20:09+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Mar 18, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E8%AF%95%E9%A2%98/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        数据库复试题1.事务
-概念：事务指的是满足 ACID 特性的一组操作，可以通过 Commit 提交一个事务，也可以使用 Rollback 进行回滚。
-ACID特性： （1）原子性 (Atomicity)：事务被视为不可分割的最小单元，事务的所有操作要么全部提交成功，要么全部失败回滚。回滚可以用回滚日志来实现，回滚日志记录着事务所执行的修改操作，在回滚时反向执行这些修改操作即可。（2）一致性 ...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/05/14/Nodejs/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/05/14/Nodejs/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/05/14/Nodejs/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E8%AF%95%E9%A2%98/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        数据结构和算法面试题总结1、动态规划算法简介　　动态规划算法是通过拆分问题，定义问题状态和状态之间的关系，使得问题能够以递推（或者说分治）的方式去解决。
-基本思想与策略　　动态规划算法的基本思想与分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，前一子问题的解，为后一子问题的求解提供了有用的信息。在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
+  
+    <div class="prev-next">
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/%E8%AE%A1%E7%BD%91/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+        <a class='prev' href='/2021/05/14/Redis%E6%95%99%E7%A8%8B/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i></p>
+          <p class='content'>Redis教程1、登录Redis1234567891011121314151617181920// 拉取redis镜像[root@bogon ~]# docker pull redis// 查看...</p>
+        </a>
       
-        计网1、OSI七层模型物理层、数据链路层 （ALOHA、PPP、HDLC、CSMA、CSMA/CA、CSMA/CD） 、网络层 （IP、ARP（IP-&gt;MAC）、RARP (MAC-&gt;IP)、ICMP、IGMP） 、传输层 （TCP、UDP） 、会话层、表示层、应用层
-2、单工、半双工、全双工​    单工：又称为单向通信，即只能有一个方向的通信而没有反方向的交互。例：无线电广播...
       
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/%E8%AE%A1%E7%BD%91/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        操作系统面试题1.进程的常见状态？以及各种状态之间的转换条件？
-就绪：进程已处于准备好运行的状态，即进程已分配到除CPU外的所有必要资源后，只要再获得CPU，便可立即执行。
-执行：进程已经获得CPU，程序正在执行状态。
-阻塞：正在执行的进程由于发生某事件（如I/O请求、申请缓冲区失败等）暂时无法继续执行的状态。
-
-2.进程同步进程同步的主要任务：是对多个相关进程在执行次序上进行协调，以使并发...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/Webpack%E6%95%99%E7%A8%8B/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Webpack教程
-Webpack是前端资源构建工具，是一个静态模块打包器（module bundler），将es6语法、less等转化为浏览器所支持的es5、css等，统一管理小的转化工具。
-
-根据入口文件的依赖关系，将资源引进来形成chunk（代码块），根据不同资源进行编译（这个过程叫做打包），之后输出对应的静态资源（bundle）。
-一、Webpack 的五个核心概念1、Entry  ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/Webpack%E6%95%99%E7%A8%8B/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/Redis%E6%95%99%E7%A8%8B/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Redis教程1、登录Redis1234567891011121314151617181920// 拉取redis镜像[root@bogon ~]# docker pull redis// 查看所有镜像[root@bogon ~]# docker imagesREPOSITORY TAG IMAGE ID CREATED SIZEdocker.io/redis latest f9b99097...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/Redis%E6%95%99%E7%A8%8B/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/Nodejs/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Nodejs一、概述​    Nodejs 擅长高并发，java 等后端语言为每一个客户端连接创建一个线程，而Nodejs则是仅仅使用一个线程，当有用户连接了，就触发一个内部事件，通过非阻塞I/O、事件驱动机制，让nodejs程序宏观上是并行的，一个8G内存的服务器可以同时处理4万用户的并发连接。
-​    supervisor工具，让nodejs代码在改变时实时自动更新
-
-D:&gt; s...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/Nodejs/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/Nginx%E6%95%99%E7%A8%8B/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Nginx教程一、概述负载均衡、反向代理
+        <a class='next' href='/2021/05/14/Nginx%E6%95%99%E7%A8%8B/'>
+          <p class='title'><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Nginx教程一、概述负载均衡、反向代理
 Nginx是一个高性能的HTTP反向代理web服务器，特点是：占有内存少、并发能力强，用C语言编写。支持50000个并发
 
-作用：反向代理  代理服务器端；正向代理     代理客户端
-负载均衡：轮询 加权轮询
-动静分离
-
-安装Nginx12345#下载.tar.gz的安装包，解压即可使用tar -zxvf ngnix-1.18.0.tar.gzcd...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/Nginx%E6%95%99%E7%A8%8B/'>
-            Read More
-          </a>
-        </div>
+作用：反向代理  代理服务器...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/14/Mybatis/">
-        May 14, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Mybatis一、基本知识
-持久层框架，不用写JDBC
-
-官方文档： mybatis – MyBatis 3 | 简介 
-Maven依赖：
-123456&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.mybatis&lt;...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/14/Mybatis/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 2
-        </p>
-        
-          <a class="next" rel="next" href="/archives/2021/page/2/">
-            <section class="post next white-box shadow">
-              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -954,87 +652,28 @@ Maven依赖：
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
+  <header>
     
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
 
-  
 
-  
-    
-    
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-text">一、概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%9F%A5%E8%AF%86"><span class="toc-text">二、知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%EF%BC%89%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-text">1）模块化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%85%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">包的概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#npm%E5%91%BD%E4%BB%A4"><span class="toc-text">npm命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#package-json%E6%96%87%E4%BB%B6"><span class="toc-text">package.json文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%EF%BC%89FS%E6%A8%A1%E5%9D%97"><span class="toc-text">2）FS模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81fs-stat"><span class="toc-text">1、fs.stat( )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81fs-mkdir"><span class="toc-text">2、fs.mkdir()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81fs-writeFile"><span class="toc-text">3、fs.writeFile()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81fs%E4%B8%AD%E7%9A%84%E6%B5%81%E4%BB%A5%E5%8F%8A%E7%AE%A1%E9%81%93%E6%B5%81"><span class="toc-text">4、fs中的流以及管道流</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%EF%BC%89express%E6%A1%86%E6%9E%B6"><span class="toc-text">3）express框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81cookie%E4%B8%AD%E9%97%B4%E4%BB%B6%EF%BC%88%E4%BF%9D%E5%AD%98%E5%9C%A8%E7%94%A8%E6%88%B7%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E4%B8%8A%EF%BC%89"><span class="toc-text">1、cookie中间件（保存在用户浏览器缓存上）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81session%E4%B8%AD%E9%97%B4%E4%BB%B6%EF%BC%88%E4%BF%9D%E5%AD%98%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%93%E5%AD%98%E4%B8%8A%EF%BC%89"><span class="toc-text">2、session中间件（保存在服务器缓存上）</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </section>
 
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -1050,14 +689,14 @@ Maven依赖：
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
